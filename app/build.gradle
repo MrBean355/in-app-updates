@@ -5,10 +5,12 @@ apply plugin: 'kotlin-android-extensions'
 android {
     signingConfigs {
         release {
-            storeFile file('')
-            storePassword ''
-            keyPassword ''
-            keyAlias = ''
+            // The APK needs to be signed with the same cert as the one on the PlayStore.
+            // See the docs for more info: https://developer.android.com/guide/playcore/in-app-updates/test
+            // storeFile file('')
+            // storePassword ''
+            // keyPassword ''
+            // keyAlias = ''
         }
     }
     compileSdkVersion 30
